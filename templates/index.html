@@ -1,0 +1,282 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'https://use.fontawesome.com/releases/v5.5.0/css/all.css' %}"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Josefin+Sans:300,400,600,700|Nunito:300,400,600,700"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{% static './fonts/fontawesome/css/all.css' %}">
+    <link rel="stylesheet" href="{% static './scss/main.css' %}">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <div class="container header__container">
+            <span class="header__bar" href="#"><i class="fas fa-bars"></i></span>
+            <div class="header__logo">
+                <a href="index.html"><i class="fas fa-utensils"></i></a>
+                <div class="header__logo-text">
+                    <h1>My Restaurant</h1>
+                </div>
+            </div>
+            <div class="header__text">
+                <h1>WELCOME</h1>
+                <p>Try Our Best Food</p>
+            </div>
+            <a href='reservation'><button class="header__btn">Reservation</button></a>
+            <a href="#gallery" class="header__iconDown"><i class="fas fa-angles-down fa-bounce"></i></a>
+            <div class="header__social">
+                <style>
+                    a{
+                        color:white;
+                    }
+                </style>
+                <span><a href='https://www.instagram.com/'><i class="fa-brands fa-instagram"></a></i></span>
+                <span><a href='https://www.pinterest.com/'><i class="fa-brands fa-pinterest"></a></i></span>
+                <span><a href='https://www.facebook.com/'><i class="fa-brands fa-facebook"></a></i></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================END OF HEADER========================= -->
+
+    <section class="gallery" id="gallery">
+        <div class="container gallery__container">
+            <h2>Popular cuisines</h2>
+            <p>We've got lots to choose from...</p>
+            <div class="gallery__cards">
+                <div class="card">
+                    <div class="card__overlay">
+                        <h1>Food</h1>
+                        <p>Price : $5000</p>
+                        <a class="card__btn btn" href="#">Reserve</a>
+                    </div>
+                    <img src="{% static './images/gallery-img-1.jpeg' %}" class="card__img">
+                </div>
+
+                <div class="card">
+                    <div class="card__overlay">
+                        <h1>Food</h1>
+                        <p>Price : $5000</p>
+                        <a class="card__btn btn" href="#">Reserve</a>
+                    </div>
+                    <img src="{% static './images/gallery-img-2.jpeg' %}" class="card__img">
+                </div>
+
+                <div class="card">
+                    <div class="card__overlay">
+                        <h1>Food</h1>
+                        <p>Price : $5000</p>
+                        <a class="card__btn btn" href="#">Reserve</a>
+                    </div>
+                    <img src="{% static './images/gallery-img-3.jpeg' %}" class="card__img">
+                </div>
+
+                <div class="card">
+                    <div class="card__overlay">
+                        <h1>Food</h1>
+                        <p>Price : $5000</p>
+                        <a class="card__btn btn" href="#">Reserve</a>
+                    </div>
+                    <img src="{% static './images/gallery-img-4.jpeg' %}" class="card__img">
+                </div>
+
+                <div class="card">
+                    <div class="card__overlay">
+                        <h1>Food</h1>
+                        <p>Price : $5000</p>
+                        <a class="card__btn btn" href="#">Reserve</a>
+                    </div>
+                    <img src="{% static './images/gallery-img-5.jpeg' %}" class="card__img">
+                </div>
+
+                <div class="card">
+                    <div class="card__overlay">
+                        <h1>Food</h1>
+                        <p>Price : $5000</p>
+                        <a class="card__btn btn" href="#">Reserve</a>
+                    </div>
+                    <img src="{% static './images/gallery-img-6.jpeg' %}" class="card__img">
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- ========================END OF GALLERY(popular)========================= -->
+    <section class="brands">
+        <div class="container brands__container">
+            <h2>Popular brands</h2>
+            <p>Order from famous restaurants near you.</p>
+            <div class="brands__cards">
+
+                <div class="brand card">
+                    <div class="brand__overlay">
+                        <h1><a href="#"> McDonald's</a></h1>
+                    </div>
+                    <img src="{% static './images/mcdelivery-editorial.png' %}">
+                </div>
+
+                <div class="brand card">
+                    <div class="brand__overlay">
+                        <h1><a href="#">StarBucks</a></h1>
+                    </div>#gallert
+                    <img src="{% static './images/starbucks.jpg' %}">
+                </div>
+
+                <div class="brand card">
+                    <div class="brand__overlay">
+                        <h1><a href="#">Abokodo</a></h1>
+                    </div>
+                    <img src="{% static './images/ABOKADO 387x151.jpg' %}">
+                </div>
+
+                <div class="brand card">
+                    <div class="brand__overlay">
+                        <h1><a href="#">Bubble</a></h1>
+                    </div>
+                    <img src="{% static './images/bubble.jpg' %}">
+                </div>
+
+                <div class="brand card">
+                    <div class="brand__overlay">
+                        <h1><a href="#">Coca-Cola</a></h1>
+                    </div>
+                    <img src="{% static './images/Coca-Cola.jpg' %}">
+                </div>
+
+                <div class="brand card">
+                    <div class="brand__overlay">
+                        <h1><a href="#">BoxPark</a></h1>
+                    </div>
+                    <img src="{% static './images/BoxPark.jpg' %}">
+                </div>
+
+                <div class="brand card">
+                    <div class="brand__overlay">
+                        <h1><a href="#">Ben & Jerry's</a></h1>
+                    </div>
+                    <img src="{% static './images/BenJerrys.jpg' %}">
+                </div>
+
+                <div class="brand card">
+                    <div class="brand__overlay">
+                        <h1><a href="#">Sams's chicken</a></h1>
+                    </div>
+                    <img src="{% static './images/sams-chicken.jpg' %}">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================END OF BRANDS========================= -->
+
+    <section class="about" id="about">
+
+        <div class="container about__container">
+
+            <div class="about__text">
+                <h1>About US</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque magni quam, reprehenderit placeat
+                    error velit delectus facere dolores, dolorum, quasi repudiandae suscipit beatae eveniet nam aliquam
+                    deleniti omnis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque aperiam maxime
+                    distinctio magni pariatur temporibus dolorum. Veritatis, dicta.</p>
+
+                <img src="{% static './images/about-us-img.png' %}">
+            <style>
+                button{
+                    color:yellow;
+                    background-color: #333333;
+                }
+            </style>
+            <a href="about"><button>More...<button></a>
+            </div>
+
+            <div class="about__avatar">
+
+                <div class="about__avatar-card">
+                    <img src="{% static './images/avatar5.jpg' %}">
+                    <h3>sarah johnson</h3>
+                    <p>Chef</p>
+                </div>
+
+                <div class="about__avatar-card">
+                    <img src="{% static './images/avatar3.jpg' %}">
+                    <h3>John lenon</h3>
+                    <p>Chef</p>
+                </div>
+
+                <div class="about__avatar-card">
+                    <img src="{% static './images/avatar4.jpg' %}">
+                    <h3>Ruth Shocng</h3>
+                    <p>Chef</p>
+                </div>
+
+                <div class="about__avatar-card">
+                    <img src="{% static './images/avatar6.jpg' %}">
+                    <h3>Rose jansohn</h3>
+                    <p>Chef</p>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========================END OF ABOUT US========================= -->
+
+    <footer>
+        <div class="container footer__container">
+
+            <div class="footer__downApp">
+                <h3>Download our apps</h3>
+                <div class="apps">
+                    <a href='https://www.googleplay.com/'><img src="{% static './images/android-google-play.svg' %}"></a>
+                    <a href='https://www.appstore.com/'><img src="{% static './images/apple-app-sotre.svg' %}"></a>
+                    <a href='https://appgallery.huawei.com/'><img src="{% static './images/huawei-download-icon.png' %}"></a>
+                </div>
+            </div>
+
+            <div class="footer__feedback">
+                <h3>Feedback</h3>
+                <p>Help us improve our website</p>
+                <a href="feedback">Send feedback</a>
+            </div>
+
+            <div class="footer__socials">
+                <h3>Follow Us</h3>
+                <ul class="footer__socials-menu">
+                    <style>
+                        a{
+                            color:#000000;
+                        }
+                    </style>
+                    <li><a href='https://www.instagram.com/'><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href='https://www.pinterest.com/'><i class="fa-brands fa-pinterest"></i></a></li>
+                    <li><a href='https://www.facebook.com/'><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href='https://www.youtube.com/'><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- ========================END OF FOOTER========================= -->
+
+
+
+</body>
+
+</html>

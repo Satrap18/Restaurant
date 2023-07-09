@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+$color-dark: #262626;
+$color-primary: #d3ab55;
+$color-secondary: #df6400;
+
+$font-dancingScript: "Dancing Script";
+$font-josefinSans: "Josefin Sans";
+$font-nunito: "Nunito";
+
+@mixin flexLayout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin positionHedear($topValue) {
+  position: absolute;
+  top: $topValue;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin btnStyle {
+  background-color: $color-primary;
+  border: 1px solid $color-primary;
+  padding: 8px 16px;
+  transition: all 0.2s;
+  font-size: 18px;
+}
+
+@mixin btnStyleHover {
+  color: white;
+  border: 1px solid white;
+  background-color: transparent;
+}
